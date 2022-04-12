@@ -25,11 +25,11 @@ class _State extends State<MyApp>{
       ),
 
       drawer: Drawer( child: Container(
-        padding: EdgeInsets.all(32.0),
+        padding: const EdgeInsets.all(32.0),
         child: Column(
           children: <Widget>[
-            Text("Hello Drawer"),
-            ElevatedButton(onPressed: ()=> Navigator.pop(context), child: Text("close"))
+            const Text("Hello Drawer"),
+            ElevatedButton(onPressed: ()=> Navigator.pop(context), child: const Text("close"))
           ],
         ),
       ),),
@@ -37,7 +37,7 @@ class _State extends State<MyApp>{
         padding: const EdgeInsets.all(32.0),
         child: Center(
           child: Column(
-            children: <Widget>[
+            children: const <Widget>[
               Text("Hello World")
             ],
           ),

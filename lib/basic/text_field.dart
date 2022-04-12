@@ -21,13 +21,13 @@ class _State extends State<MyApp>{
 
   void _onChange(String value){
     setState(() {
-      _value= "Change ${value}";
+      _value= "Change $value";
     });
   }
 
   void _onSubmit(String value){
     setState(() {
-      _value= "Submit ${value}";
+      _value= "Submit $value";
     });
   }
 

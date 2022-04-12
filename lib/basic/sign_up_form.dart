@@ -77,8 +77,8 @@ class SignUpFormState extends State<SignUpForm> {
                 labelText: 'Phone',
               ),
             ),
-            TextField(
-              decoration: const InputDecoration(
+            const TextField(
+              decoration: InputDecoration(
                 icon: Icon(Icons.add_location),
                 hintText: 'Enter your Location',
                 labelText: 'Location',
@@ -179,8 +179,8 @@ class SignUpFormState extends State<SignUpForm> {
                 }),
             Container(
                 padding: const EdgeInsets.only(left: 150.0, top: 40.0),
-                child: ElevatedButton(
-                    child: const Text('Submit'), onPressed: null)),
+                child: const ElevatedButton(
+                    child: Text('Submit'), onPressed: null)),
           ],
         ),
       ),

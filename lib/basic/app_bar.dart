@@ -31,7 +31,7 @@ class _State extends State<MyApp>{
         ],
       ),
       body: Container(
-        padding:  EdgeInsets.all(32.0),
+        padding:  const EdgeInsets.all(32.0),
         child: Center(
           child: Column(
             children:  <Widget>[

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'dart:io';
-import 'dart:async';
 
 
 void main(){
@@ -25,7 +23,7 @@ class _State extends State<MyApp>{
 
   void _getData() async {
     var url = "http://country.io/names.json";
-    var response = await http.get(url);
+    var response = await http.get(Uri.parse(url));
 
     if(response.statusCode == 200){
       setState(() {
@@ -53,14 +51,14 @@ class _State extends State<MyApp>{
         child: Center(
           child: Column(
             children: <Widget>[
-              Text("Countries", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Countries", style: TextStyle(fontWeight: FontWeight.bold)),
               Expanded(child: ListView.builder(
                 itemCount: _countries.length,
                 itemBuilder: (BuildContext context, int index){
                   String key = _countries.keys.elementAt(index);
                   return Row(
                     children: <Widget>[
-                      Text("${key}"),
+                      Text(key),
                       Text(_countries[key])
 
                     ],

@@ -11,8 +11,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _State extends State<MyApp> {
-  TextEditingController _user = TextEditingController();
-  TextEditingController _pass = TextEditingController();
+  final TextEditingController _user = TextEditingController();
+  final TextEditingController _pass = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +25,10 @@ class _State extends State<MyApp> {
         child: Center(
           child: Column(
             children: <Widget>[
-              Text("Login Here"),
+              const Text("Login Here"),
               Row(
                 children: <Widget>[
-                  Text("username : "),
+                  const Text("username : "),
                   Expanded(
                       child: TextField(
                         controller: _user,
@@ -37,7 +37,7 @@ class _State extends State<MyApp> {
               ),
               Row(
                 children: <Widget>[
-                  Text("password : "),
+                  const Text("password : "),
                   Expanded(
                       child: TextField(
                         controller: _pass,
@@ -47,9 +47,9 @@ class _State extends State<MyApp> {
               ),
 
               Padding(
-                padding: EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(12.0),
                 child: ElevatedButton(
-                    child: Text("Click Me"),
+                    child: const Text("Click Me"),
                     onPressed: () => print(_user.text)),
               )
             ],

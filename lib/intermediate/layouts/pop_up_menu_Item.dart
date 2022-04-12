@@ -15,7 +15,7 @@ enum Animals { Cat, Dog, Bird, Lizard, Fish }
 class _State extends State<MyApp> {
   Animals _selected = Animals.Dog;
   String _value = "Make a selection";
-  List<PopupMenuItem<Animals>> _items = [];
+  final List<PopupMenuItem<Animals>> _items = [];
 
   @override
   // ignore: must_call_super

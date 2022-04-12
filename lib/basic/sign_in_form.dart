@@ -1,4 +1,3 @@
-import 'package:button/main.dart';
 import 'sign_up_form.dart';
 import 'package:flutter/material.dart';
 

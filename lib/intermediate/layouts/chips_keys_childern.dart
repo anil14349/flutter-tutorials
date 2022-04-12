@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget{
 class _State extends State<MyApp>{
 
   int _counter =0;
-  List<Widget> _list = [];
+  final List<Widget> _list = [];
 
   @override
   void initState() {
@@ -40,7 +40,7 @@ class _State extends State<MyApp>{
     Key key=Key("item $i");
     Container child=Container(
       key: key,
-      padding: EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(10.0),
       child: Chip(
         label: Text("$i name here"),
         deleteIconColor: Colors.red,
@@ -78,7 +78,7 @@ class _State extends State<MyApp>{
       appBar: AppBar(
         title: const Text("First App"),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: _onClicked,child: Icon(Icons.add)),
+      floatingActionButton: FloatingActionButton(onPressed: _onClicked,child: const Icon(Icons.add)),
       body: Container(
         padding: const EdgeInsets.all(32.0),
         child: Center(

@@ -21,7 +21,7 @@ class _State extends State<MyApp> {
         padding: const EdgeInsets.all(32.0),
         child: Center(
           child: Column(
-            children: <Widget>[Text("Hello World")],
+            children: const <Widget>[Text("Hello World")],
           ),
         ),
       ),

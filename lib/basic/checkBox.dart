@@ -36,8 +36,8 @@ class _State extends State<MyApp>{
           child: Column(
             children:  <Widget>[
               Checkbox(value: _value1, onChanged: _value1Changed,autofocus: true),
-              CheckboxListTile(value: _value2, onChanged: _value2Changed, title: Text('Hello'),
-                controlAffinity: ListTileControlAffinity.leading, subtitle: Text("subtitle"), secondary: Icon(Icons.download), activeColor: Colors.indigo, )
+              CheckboxListTile(value: _value2, onChanged: _value2Changed, title: const Text('Hello'),
+                controlAffinity: ListTileControlAffinity.leading, subtitle: const Text("subtitle"), secondary: const Icon(Icons.download), activeColor: Colors.indigo, )
             ],
           ),
         ),

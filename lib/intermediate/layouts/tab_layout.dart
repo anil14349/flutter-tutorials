@@ -57,7 +57,7 @@ class _State extends State<MyApp> with SingleTickerProviderStateMixin {
           controller: _controller,
           children: _items.map((Choice item){
             return Container(
-              padding: EdgeInsets.all(25.0),
+              padding: const EdgeInsets.all(25.0),
               child: Center(
                 child: Column(
                   children: <Widget>[

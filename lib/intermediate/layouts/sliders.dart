@@ -32,14 +32,14 @@ class _State extends State<MyApp>{
         child: Center(
           child: Column(
             children: <Widget>[
-              new Slider(value: _value, onChanged: _onChanged),
+              Slider(value: _value, onChanged: _onChanged),
               Container(
-                padding: EdgeInsets.all(32.0),
-                child: LinearProgressIndicator(value: _value,valueColor: AlwaysStoppedAnimation<Color>(Colors.red)),
+                padding: const EdgeInsets.all(32.0),
+                child: LinearProgressIndicator(value: _value,valueColor: const AlwaysStoppedAnimation<Color>(Colors.red)),
               ),
               Container(
-                padding: EdgeInsets.all(32.0),
-                child: CircularProgressIndicator(value: _value,valueColor: AlwaysStoppedAnimation<Color>(Colors.green)),
+                padding: const EdgeInsets.all(32.0),
+                child: CircularProgressIndicator(value: _value,valueColor: const AlwaysStoppedAnimation<Color>(Colors.green)),
               )
             ],
           ),

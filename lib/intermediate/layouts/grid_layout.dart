@@ -26,7 +26,7 @@ class _State extends State<MyApp> {
   @override
   void initState() {
     for (int i = 0; i < 16; i++) {
-      _areas.add(Area(index: i, name: "Area ${i}"));
+      _areas.add(Area(index: i, name: "Area $i"));
     }
 
     var rng = Random();

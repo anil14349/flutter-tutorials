@@ -28,9 +28,9 @@ class _State extends State<MyApp>{
         title: const Text("First App"),
       ),
       persistentFooterButtons: <Widget>[
-        IconButton(onPressed: () => _onClick("Button1"), icon: Icon(Icons.timer)),
-        IconButton(onPressed: () => _onClick("Button2"), icon: Icon(Icons.people)),
-        IconButton(onPressed: () => _onClick("Button3"), icon: Icon(Icons.map)),
+        IconButton(onPressed: () => _onClick("Button1"), icon: const Icon(Icons.timer)),
+        IconButton(onPressed: () => _onClick("Button2"), icon: const Icon(Icons.people)),
+        IconButton(onPressed: () => _onClick("Button3"), icon: const Icon(Icons.map)),
       ],
       body: Container(
         padding: const EdgeInsets.all(32.0),

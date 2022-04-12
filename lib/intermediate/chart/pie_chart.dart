@@ -25,7 +25,7 @@ class Sales {
 
 class _State extends State<MyApp> {
   List<Sales> _data = [];
-  List<charts.Series<Sales, int>> _chartdata = [];
+  final List<charts.Series<Sales, int>> _chartdata = [];
 
   void makeData() {
     _data = <Sales>[

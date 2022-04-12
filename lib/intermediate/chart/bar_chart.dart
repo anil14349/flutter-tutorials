@@ -58,7 +58,7 @@ class _State extends State<MyApp> {
         child: Center(
           child: Column(
             children: <Widget>[
-              Text("Sales Data"),
+              const Text("Sales Data"),
               Expanded(child: charts.BarChart(_chartdata))
               ],
           ),

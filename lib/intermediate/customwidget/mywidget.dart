@@ -4,8 +4,8 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(32.0),
-      child: Text("My Widget"),
+      padding: const EdgeInsets.all(32.0),
+      child: const Text("My Widget"),
     );
   }
 }

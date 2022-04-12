@@ -31,9 +31,9 @@ class _State extends State<MyApp>{
 
               Card(
                 child: Container(
-                  padding: EdgeInsets.all(32.0),
+                  padding: const EdgeInsets.all(32.0),
                   child: Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Text("Hello"),
                       Text("Hello@")
                     ],
@@ -42,9 +42,9 @@ class _State extends State<MyApp>{
               ),
               Card(
                 child: Container(
-                  padding: EdgeInsets.all(32.0),
+                  padding: const EdgeInsets.all(32.0),
                   child: Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Text("Hello"),
                       Text("Hello@")
                     ],
@@ -53,9 +53,9 @@ class _State extends State<MyApp>{
               ),
               Card(
                 child: Container(
-                  padding: EdgeInsets.all(32.0),
+                  padding: const EdgeInsets.all(32.0),
                   child: Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Text("Hello"),
                       Text("Hello@")
                     ],

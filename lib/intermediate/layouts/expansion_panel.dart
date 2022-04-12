@@ -27,10 +27,10 @@ class _State extends State<MyApp> {
     for (int i = 0; i < 10; i++) {
       _items.add(MyItem(
           false,
-          'Item ${i}',
+          'Item $i',
           Container(
             padding: const EdgeInsets.all(10.0),
-            child:  Text('Hello World ${i}'),
+            child:  Text('Hello World $i'),
           )));
     }
   }

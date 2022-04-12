@@ -31,9 +31,9 @@ class _State extends State<MyApp>{
       return SimpleDialog(
         title: const Text("Do you like Flutter"),
         children: <Widget>[
-          SimpleDialogOption(child:  Text("Yes!!"), onPressed: () { Navigator.pop(context,Answers.yes);},),
-          SimpleDialogOption(child:  Text("No!!"), onPressed: () { Navigator.pop(context,Answers.no);},),
-          SimpleDialogOption(child:  Text("MayBe!!"), onPressed: () { Navigator.pop(context,Answers.mayBe);},)
+          SimpleDialogOption(child:  const Text("Yes!!"), onPressed: () { Navigator.pop(context,Answers.yes);},),
+          SimpleDialogOption(child:  const Text("No!!"), onPressed: () { Navigator.pop(context,Answers.no);},),
+          SimpleDialogOption(child:  const Text("MayBe!!"), onPressed: () { Navigator.pop(context,Answers.mayBe);},)
         ],
       );
     } )
@@ -58,7 +58,7 @@ class _State extends State<MyApp>{
           child: Column(
             children: <Widget>[
               Text(_value),
-              ElevatedButton(onPressed: _askUser, child: Text('Click Me'))
+              ElevatedButton(onPressed: _askUser, child: const Text('Click Me'))
             ],
           ),
         ),

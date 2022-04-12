@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 void main() {
-  runApp(new MaterialApp(
-    home: new MyApp(),
+  runApp(MaterialApp(
+    home: MyApp(),
   ));
 }
 
@@ -35,7 +35,7 @@ class _State extends State<MyApp> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar:  AppBar(
-        title:  Text('Name here'),
+        title:  const Text('Name here'),
       ),
       body:  Container(
           padding:  const EdgeInsets.all(32.0),
